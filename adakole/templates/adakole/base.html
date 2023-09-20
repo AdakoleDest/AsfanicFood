@@ -1,11 +1,42 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Asfanic Food</title>
+    <link rel="stylesheet" href="{% static 'adakole/style.css' %}">
 </head>
+
 <body>
-    
+    <header id="home">
+        <nav>
+            <h1 class="logo">ASFANIC</h1>
+            <!-- For desktops -->
+            <ul class="desktop-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#explore">Explore Foods</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#">+234 903 4137 225</a></li>
+            </ul>
+
+            <!-- For mobile devices -->
+            <ul class="mobile-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#explore">Explore Foods</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#">+234 903 4137 225</a></li>
+            </ul>
+            <span class="mobile-nav-btn"><i class="fa-solid fa-bars" id="nav-btn"></i><i class="fa-solid fa-xmark"
+                    id="nav-btn-cancel"></i></span>
+        </nav>
+    </header>
+    {% block content %} {% endblock %}
+    <script src="{% static 'adakole/main.js' %}"></script>
 </body>
 </html>
