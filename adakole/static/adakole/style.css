@@ -9,6 +9,7 @@
 
 :root {
     --primary-color: rgb(128, 0, 0);
+    --primary-color-input: rgb(184, 28, 28);
     --primary-font: 'Rubik',
         sans-serif;
     --text-color: aliceblue;
@@ -397,6 +398,7 @@ nav a {
 .price-tag span:nth-of-type(2)::before {
     content: "\24";
 }
+
 
 @media (max-width: 904px) {
     nav {
