@@ -1,7 +1,7 @@
 const sideBar = document.querySelector(".mobile-nav-btn");
 const sideBarMenu = document.querySelector(".mobile-nav");
-const navBtn1 = document.querySelector("#nav-btn")
-const navBtn2 = document.querySelector("#nav-btn-cancel")
+const navBtn1 = document.querySelector("#nav-btn");
+const navBtn2 = document.querySelector("#nav-btn-cancel");
 
 
 navBtn1.onclick = function(){

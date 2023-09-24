@@ -2,15 +2,15 @@
 {% extends "adakole/base.html" %}
 {% load static %}
 {% block css %}
-    <link rel="stylesheet" href="{% static 'adakole/style.css' %}">
-    <link rel="stylesheet" href="{% static 'adakole/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'adakole/CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'adakole/CSS/signup.css' %}">
 {% endblock css %}
 
 {% block content %}
     <section class="form-section">
         <div class="form-container">
             <h2 class="form-header">Create Account</h2>
-            <form action="post" autocomplete="off">
+            <form action="post" name="signup-form" autocomplete="off">
                 {% csrf_token %}
                 <input type="text" name="name" id="name" placeholder="Full Name" required>
                 <input type="email" name="email" id="email" placeholder="E-mail" required>
