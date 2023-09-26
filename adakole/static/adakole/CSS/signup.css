@@ -27,11 +27,13 @@ input {
 }
 
 input::placeholder {
-    color: #f1f1f1;
+    color: #000000;
 }
 
 input:focus {
     transform: scale(1.05);
+    outline: ;
+    border-radius: 5px;
     transition: 0.6s all;
 }
 
@@ -39,8 +41,8 @@ input:focus {
 #email,
 #phone,
 #password {
-    background: var(--primary-color-input);
-    color: #f1f1f1;
+    background: #f1f1f1;
+    color: #000000;
     padding: .5rem 1rem;
     margin-bottom: 1.3rem;
     border-radius: .5rem;
@@ -78,4 +80,10 @@ input:focus {
 
 .signin {
     color: var(--primary-color-input);
+}
+
+@media (max-width: 904px){
+    .form-container {
+        box-shadow: none;
+    }
 }

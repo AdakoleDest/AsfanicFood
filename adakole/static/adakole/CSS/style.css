@@ -17,6 +17,7 @@
 
 body {
     font-family: var(--primary-font);
+    /* background: black; */
 }
 
 nav {
@@ -62,6 +63,8 @@ nav a {
     list-style: none;
     gap: 2rem;
 }
+
+
 
 .mobile-nav {
     display: none;
@@ -414,7 +417,7 @@ nav a {
         height: 0;
         overflow-y: scroll;
         padding-left: 1rem;
-        background: rgb(18, 18, 18);
+        background: var(--primary-color);
         width: 100%;
     }
 
@@ -575,6 +578,11 @@ nav a {
 
     .product .btn-container a {
         padding: 0.8rem 1.5rem;
+    }
+
+    .form-container{
+        box-shadow: 0 0 0 rgb(193, 182, 182), -10px -10px 15px #ffffff;
+        background: none;
     }
 }
 
